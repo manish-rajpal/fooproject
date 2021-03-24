@@ -3,7 +3,7 @@ pipeline {
   stages {
         stage('Checkout') {
             steps           {
-                git 'https://github.com/manish-rajpal/postman.git'
+                git 'https://github.com/manish-rajpal/fooproject.git'
                              }
                           }
           }
