@@ -17,8 +17,8 @@ ${MYPAGEBUTTON}                                     id=mypage
 ${CARDNO}                                           1234123456785678
 ${CARDNAME}                                         MANISH
 ${CARDCVV}                                          777
-${BOOKDATEFROM}                                     03-12
-${BOOKDATETO}                                       03-12
+${BOOKDATEFROM}                                     03-28
+${BOOKDATETO}                                       03-29
 ${CONTINUEBUTTON}                                   id=continue
 ${LOGGEDOUT}                                        //*[@id="login"]
 ${LOGGEDOUTCONFIRMATION}                            //*[@id="questionText"]
