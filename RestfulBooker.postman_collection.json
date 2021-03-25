@@ -30,7 +30,7 @@
 									"pm.test(\"is page http status 200 \", () => {   pm.expect(pm.response.code).to.eql(status_code); });",
 									"",
 									"",
-									"pm.test(\"Response time is less than 1000ms\", function () {",
+									"pm.test(\"Response  time is less than 1000ms\", function () {",
 									"        pm.expect(pm.response.responseTime).to.be.below(1000);",
 									"    });"
 								],
