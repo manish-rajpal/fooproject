@@ -50,7 +50,7 @@ Change Date
     Input Text                                      id=end      ${BOOKDATETO}
     click Button                                    ${CONTINUEBUTTON}
 Select car
-    click Button                                    id=bookQ7pass5
+    click Button                                    id=bookVivaropass9
 
 Confirm Booking
     Input Text                                      id=cardNum      ${CARDNO}
