@@ -13,15 +13,15 @@ public class EmployeeTest {
     @Test
     @DisplayName("Testing by adding the employees list")
     public void AddEmployee() {
-        Employee emp1 = new Employee("manish", "rajpal", 48, 22500);
+        Employee emp1 = new Employee("Shilpa", "Srinivas", 39, 34000);
         ps.AddEmployee(emp1);
-        Employee emp2 = new Employee("Anand", "ravi", 25, 45000);
+        Employee emp2 = new Employee("Srinivas", "Mani", 40, 45000);
         ps.AddEmployee(emp2);
-        Employee emp3 = new Employee("Priya ", "Palli", 36, 38000);
+        Employee emp3 = new Employee("Padma ", "Priya", 36, 38000);
         ps.AddEmployee(emp3);
-        Employee emp4 = new Employee("Ravii", "nair", 35, 34000);
+        Employee emp4 = new Employee("Ranjini", "Rao", 35, 34000);
         ps.AddEmployee(emp4);
-        Employee emp5 = new Employee("pooja", "Shirango", 33, 45000);
+        Employee emp5 = new Employee("Chandrika", "Shetty", 33, 45000);
         ps.AddEmployee(emp5);
         Assertions.assertEquals(5, ps.arrEmp.size());
         int size = ps.arrEmp.size();
@@ -31,7 +31,18 @@ public class EmployeeTest {
         Assertions.assertEquals(4, ps.arrEmp.size());
     }
 
-    
+    public void AddEmployeeList() {
+        Employee emp1 = new Employee("Shilpa", "Srinivas", 39, 34000);
+        ps.AddEmployee(emp1);
+        Employee emp2 = new Employee("Srinivas", "Mani", 40, 45000);
+        ps.AddEmployee(emp2);
+        Employee emp3 = new Employee("Padma", "Priya", 36, 38000);
+        ps.AddEmployee(emp3);
+        Employee emp4 = new Employee("ranjini", "Rao", 35, 34000);
+        ps.AddEmployee(emp4);
+        Employee emp5 = new Employee("Chandrika", "Shetty", 33, 45000);
+        ps.AddEmployee(emp5);
+    }
     @Test
     public void RaiseSalaryForAllEmployees(){
         AddEmployeeList();
@@ -39,7 +50,7 @@ public class EmployeeTest {
         Assertions.assertEquals(57000,ps.arrEmp.get(2).GetEmployeeSalary());
     }
     @Test
-    @DisplayName("Here we test the increaes in salary for all employees")
+    @DisplayName("Testing the increment of all employees")
     public void RaiseSalary() throws Exception {
         AddEmployeeList();
         ps.RaiseSalary(1,10);
