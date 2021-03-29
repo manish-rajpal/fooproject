@@ -17,8 +17,8 @@ ${MYPAGEBUTTON}                                     id=mypage
 ${CARDNO}                                           1234123456785678
 ${CARDNAME}                                         MANISH
 ${CARDCVV}                                          777
-${BOOKDATEFROM}                                     03-12
-${BOOKDATETO}                                       03-12
+${BOOKDATEFROM}                                     04-12
+${BOOKDATETO}                                       04-14
 ${CONTINUEBUTTON}                                   id=continue
 ${LOGGEDOUT}                                        //*[@id="login"]
 ${LOGGEDOUTCONFIRMATION}                            //*[@id="questionText"]
@@ -78,7 +78,7 @@ Change Date
     Input Text                                      id=end      ${BOOKDATETO}
     click Button                                    ${CONTINUEBUTTON}
 Select car
-    click Button                                    id=bookModelSpass5
+    click Button                                    id=bookQ7pass5
 Confirm Booking
     Input Text                                      id=cardNum      ${CARDNO}
     Input text                                      id=fullName     ${CARDNAME}
